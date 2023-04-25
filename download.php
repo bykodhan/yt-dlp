@@ -9,9 +9,9 @@ print_r($result);
 telegram_bot_send_message($result);
 function telegram_bot_send_message($message)
 {
-    $token = "5106618003:AAH40ztxFEANVMP8G7HsUcczO6QabnCJkf8";
+    $token = "";
     $parametre = array(
-        'chat_id' => "-647897094",
+        'chat_id' => "",
         'video' => $message,
     );
     $ch = curl_init();
