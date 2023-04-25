@@ -2,10 +2,9 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-header('Content-Type:application/json');
 $url = $_GET['url'];
 $result = shell_exec("yt-dlp " . $url);
-print_r($result);
+var_dump($result);
 telegram_bot_send_message($result);
 function telegram_bot_send_message($message)
 {
